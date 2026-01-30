@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Portfolio</title>
+  <meta name="description" content="Portfolio page with simple project cards." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <button id="navToggle2" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="mainNav2" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="portfolio-head reveal">
+      <h1>Portfolio</h1>
+      <p>Some sample projects. Replace these with your real projects or link to live demos.</p>
+    </section>
+
+    <section class="projects grid reveal">
+      <article class="card project">
+        <div class="thumb" aria-hidden="true"></div>
+        <h3>Project One</h3>
+        <p>A short description for project one. Add links and screenshots as needed.</p>
+        <p><a class="btn" href="#">View</a></p>
+      </article>
+
+      <article class="card project">
+        <div class="thumb" aria-hidden="true"></div>
+        <h3>Project Two</h3>
+        <p>A short description for project two. Showcase technologies used and outcomes.</p>
+        <p><a class="btn" href="#">View</a></p>
+      </article>
+
+      <article class="card project">
+        <div class="thumb" aria-hidden="true"></div>
+        <h3>Project Three</h3>
+        <p>A short description for project three. Consider adding a live link and repo link.</p>
+        <p><a class="btn" href="#">View</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year2"></span> MySite. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

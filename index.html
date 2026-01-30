@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Home</title>
+  <meta name="description" content="A simple responsive website with animations, portfolio page, and contact form." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="home">
+      <div class="container hero-inner">
+        <h1>Welcome to My Simple Website</h1>
+        <p>A minimal, responsive template with a linked portfolio, scroll reveals, and a contact form that can submit via Formspree.</p>
+        <p><a class="btn" href="#contact">Get in Touch</a></p>
+      </div>
+    </section>
+
+    <section id="features" class="features container reveal">
+      <h2>Features</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Layout adjusts for mobile, tablet and desktop using CSS Grid and flexible rules.</p>
+        </article>
+        <article class="card">
+          <h3>Animated</h3>
+          <p>Subtle scroll reveal effects using IntersectionObserver for lightweight performance.</p>
+        </article>
+        <article class="card">
+          <h3>Contact</h3>
+          <p>Contact form is ready for Formspree; falls back to a simulated send so you can test locally.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container reveal">
+      <h2>About</h2>
+      <p>This starter template demonstrates a small multi-page site with a portfolio and improved UI micro-interactions.</p>
+    </section>
+
+    <section id="contact" class="contact container reveal">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+          <small class="error" data-for="name"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" data-for="email"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <small class="error" data-for="message"></small>
+        </div>
+
+        <div class="form-row actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+
+        <p id="formSuccess" class="success" aria-live="polite"></p>
+        <p class="hint">Tip: To enable real submissions, configure the Formspree endpoint in <code>script.js</code>.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> MySite. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
